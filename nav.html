@@ -9,6 +9,7 @@
 <body>
     <nav>
         <ul class="premier">
+            <li onclick= hipremier()><a href="#"><img src="close_24dp_000000_FILL0_wght300_GRAD0_opsz24.png" alt="" height="26" viewBox="0 96 960 960" width="26"></a></li>
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Actualite</a></li>
@@ -19,13 +20,17 @@
             <li><a href="#">Contact</a></li>
             <li><a href="#">Actualite</a></li>
             <li><a href="#">Info</a></li>
-            <li onclick=showpremier()><a href=""><img src="menu_24dp_000000_FILL0_wght300_GRAD0_opsz24.png" alt="" height="26" viewBox="0 96 960 960" width="26"></a></li>
+            <li  onclick= showpremier()><a href="#"><img src="menu_24dp_000000_FILL0_wght300_GRAD0_opsz24.png" alt="" height="26" viewBox="0 96 960 960" width="26"></a></li>
         </ul>
     </nav>
     <script>
         function showpremier(){
             const premier= document.querySelector('.premier')
             premier.style.display= 'flex'
+        }
+        function hipremier(){
+            const premier= document.querySelector('.premier')
+            premier.style.display= 'none'
         }
     </script>
 </body>
